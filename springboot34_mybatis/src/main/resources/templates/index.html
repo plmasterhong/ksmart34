@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout/default}">
+
+<th:block layout:fragment="customTitle">
+	<title>index</title>
+</th:block>
+<th:block layout:fragment="customContents">
+	
+		index 화면입니다.
+		
+	<form action="/test" method="post">
+		<input type="date" name="startTime">
+		<input type="date" name="endTime">
+		<input type="submit" value="테스트">
+	</form>
+	 
+	
+</th:block>
+</html>
